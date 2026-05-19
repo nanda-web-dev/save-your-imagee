@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+  <title>Cosmic Vault | Cyber Gallery</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,600;14..32,700;14..32,800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<div class="nebula-bg">
+  <div class="star-field"></div>
+  <div class="aurora-1"></div>
+  <div class="aurora-2"></div>
+</div>
+
+<!-- AUTH MODAL CARD -->
+<div class="auth-container" id="authContainer">
+  <div class="auth-card">
+    <div class="auth-glow"></div>
+    <div class="logo-symbol">◈ COSMIC VAULT ◈</div>
+    <h2>cyber<span>gallery</span></h2>
+    <div class="input-field">
+      <input type="email" id="loginEmail" placeholder="orbit@cosmic.com" autocomplete="email">
+      <span class="focus-border"></span>
+    </div>
+    <div class="input-field">
+      <input type="password" id="loginPassword" placeholder="⋆⁺₊☾ galactic key ☽₊⁺⋆">
+      <span class="focus-border"></span>
+    </div>
+    <div class="auth-buttons">
+      <button class="btn-primary" id="signupBtn">⟡ DAFTAR ⟡</button>
+      <button class="btn-secondary" id="signinBtn">✦ MASUK ✦</button>
+    </div>
+    <div class="cosmic-note">✨ neural archive — immutable & encrypted ✨</div>
+  </div>
+</div>
+
+<!-- MAIN APP : GALLERY DASHBOARD -->
+<div class="app-dashboard" id="appDashboard">
+  <div class="glass-header">
+    <div class="brand">
+      <div class="brand-icon">🪐</div>
+      <div class="brand-text">COSMIC<span>VAULT</span></div>
+    </div>
+    <div class="user-profile">
+      <div class="avatar-ring">
+        <div class="avatar">🌙</div>
+      </div>
+      <div class="user-meta">
+        <span id="userDisplayEmail" class="user-email">astronaut@galaxy.com</span>
+        <button id="logoutBtnNew" class="logout-neon">⇠ logout</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="upload-nebula">
+    <div class="drop-constellation" id="dropConstellation">
+      <div class="vortex-icon">⬆️🌀</div>
+      <p class="drag-text">seret & letakkan foto di sini</p>
+      <p class="or-text">atau</p>
+      <label for="galaxyFile" class="file-pulse">pilih dari device</label>
+      <input type="file" id="galaxyFile" accept="image/*" hidden>
+      <div id="filePreviewName" class="file-name-preview"></div>
+    </div>
+    <button class="btn-upload-cosmic" id="uploadCosmicBtn">
+      <span>📡 unggah ke ruang angkasa</span>
+    </button>
+  </div>
+
+  <!-- GALLERY GRID MODERN -->
+  <div class="gallery-grid" id="galleryGrid">
+    <div class="loader-cosmic">memuat galaksi...</div>
+  </div>
+</div>
+
+<script type="module" src="script.js"></script>
+</body>
+</html>
